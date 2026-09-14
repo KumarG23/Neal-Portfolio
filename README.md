@@ -2,7 +2,7 @@
 
 Personal site: [neal.sharma-house.com](https://neal.sharma-house.com)
 
-Software for money and messy production systems. Flagship work is Delphi. Trading Lab stays paper. Nepali Threads is built, not fully launched.
+Personal portfolio focused on practical software, data, fintech, and financial systems. Featured work includes Delphi, Trading Lab, and Nepali Threads.
 
 ## Stack
 
