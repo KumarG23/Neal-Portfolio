@@ -1,6 +1,8 @@
-# Neal Portfolio
+# Neal Sharma
 
-A modern responsive portfolio for Neal Sharma focused on software engineering, fintech, data, and financial analysis.
+Personal site: [neal.sharma-house.com](https://neal.sharma-house.com)
+
+Software for money and messy production systems. Flagship work is Delphi. Trading Lab stays paper. Nepali Threads is built, not fully launched.
 
 ## Stack
 
@@ -8,7 +10,7 @@ A modern responsive portfolio for Neal Sharma focused on software engineering, f
 - React
 - TypeScript
 - CSS
-- Vercel deployment target
+- Vercel
 
 ## Local development
 
@@ -18,7 +20,3 @@ npm run dev
 ```
 
 Then open `http://localhost:3000`.
-
-## Current direction
-
-The first version establishes the visual system and homepage positioning. Next steps include project case studies, a finance/analysis section, resume, contact details, project screenshots, and deployment to `neal.sharma-house.com`.
