@@ -1,189 +1,36 @@
 const projects = [
-  {
-    name: "Delphi",
-    eyebrow: "Fintech · Featured",
-    description:
-      "A personal finance platform focused on secure financial-data integrations, modern product engineering, and clear decision-making.",
-    tags: ["Fintech", ".NET", "PostgreSQL", "Plaid", "APIs"],
-  },
-  {
-    name: "Jarvis Command",
-    eyebrow: "AI Product Engineering",
-    description:
-      "A chat-first command center for projects, tools, and AI-assisted workflows — designed to make complex systems feel simple.",
-    tags: ["AI", "Agents", "MCP", "Product", "Integrations"],
-  },
-  {
-    name: "Financial Analysis Lab",
-    eyebrow: "Analysis · In progress",
-    description:
-      "A growing collection of company, KPI, market, and financial-statement analyses built to turn raw data into useful business insight.",
-    tags: ["Financial Analysis", "SQL", "Excel", "Python", "Dashboards"],
-  },
+  { number: "01", name: "Delphi", type: "FINTECH · AI · PERSONAL FINANCE", status: "ACTIVE BUILD", description: "An AI-powered personal finance companion built around financial context, useful decisions, and a slightly opinionated CFO.", tags: ["TypeScript", "React Native", "Supabase", "PostgreSQL", "AI"], href: "https://github.com/KumarG23/delphi", featured: true },
+  { number: "02", name: "Trading Lab", type: "FINANCIAL RESEARCH · PYTHON", status: "RESEARCH MODE", description: "An evidence-first environment for market research, explicit strategies, historical testing, paper proposals, and performance analysis.", tags: ["Python", "SQLite", "Backtesting", "Metrics"], href: "https://github.com/KumarG23/trading-lab" },
+  { number: "03", name: "Nepali Threads", type: "COMMERCE · FULL STACK", status: "PRE-LAUNCH", description: "A family-built commerce product for Nepali goods with a React storefront, Django backend, authentication, APIs, and Stripe payments. The product is built; the business launch is still in progress.", tags: ["React", "Django", "Python", "Stripe"], href: "https://github.com/KumarG23/nep-front" },
+  { number: "04", name: "GainLog", type: "HEALTH · MOBILE · DATA", status: "ACTIVE BUILD", description: "A mobile fitness and nutrition companion combining workouts, nutrition, goals, trends, reminders, and Android Health Connect data.", tags: ["React Native", "Expo", "TypeScript", "Health Connect"], href: "https://github.com/KumarG23/GainLog" },
+  { number: "05", name: "Jarvis Command", type: "AI · SYSTEMS · PRODUCT", status: "ITERATING", description: "A chat-first command center for persistent projects, tools, approvals, artifacts, and AI-assisted workflows.", tags: ["AI", "MCP", "Agents", "Integrations"], href: "https://github.com/KumarG23/jarvis-command" },
 ];
 
-const disciplines = [
-  {
-    title: "Software Engineering",
-    text: "Modern product development, APIs, integrations, backend systems, databases, and production-minded engineering.",
-  },
-  {
-    title: "Financial Analysis",
-    text: "Financial statements, KPI analysis, trend interpretation, business performance, modeling, and decision support.",
-  },
-  {
-    title: "Data & Systems",
-    text: "SQL, operational data, healthcare systems, troubleshooting, automation, infrastructure, and system integration.",
-  },
-  {
-    title: "AI-Assisted Development",
-    text: "Practical use of modern AI tools to accelerate implementation, review, research, and product iteration.",
-  },
+const lanes = [
+  ["01", "ENGINEERING", "Products, APIs, databases, integrations, and production-minded systems."],
+  ["02", "FINANCE + ANALYSIS", "Financial context, market research, metrics, modeling, and decision support."],
+  ["03", "DATA + SYSTEMS", "SQL, operational data, healthcare technology, troubleshooting, and automation."],
+  ["04", "AI", "Human-owned product decisions with AI-assisted implementation and reasoning."],
 ];
 
 export default function Home() {
-  return (
-    <main>
-      <header className="nav shell">
-        <a className="brand" href="#top" aria-label="Neal Sharma home">
-          NS<span>.</span>
-        </a>
-        <nav aria-label="Primary navigation">
-          <a href="#work">Work</a>
-          <a href="#capabilities">Capabilities</a>
-          <a href="#about">About</a>
-          <a href="https://github.com/KumarG23" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </nav>
-      </header>
+  return <main id="top">
+    <header className="nav shell"><a className="brand" href="#top">NS<span>.</span></a><nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#about">About</a><a href="https://github.com/KumarG23" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/neal-sharma23" target="_blank" rel="noreferrer">LinkedIn ↗</a></nav></header>
 
-      <section className="hero shell" id="top">
-        <div className="hero-copy">
-          <p className="kicker">SOFTWARE · DATA · FINANCE</p>
-          <h1>
-            I build at the intersection of <span>software, data, and finance.</span>
-          </h1>
-          <p className="lede">
-            I’m Neal Sharma — a technical professional moving deeper into fintech,
-            product engineering, and financial analysis. I like solving practical
-            problems, connecting systems, and turning messy information into useful
-            decisions.
-          </p>
-          <div className="hero-actions">
-            <a className="button primary" href="#work">Explore my work</a>
-            <a className="button ghost" href="#about">My background</a>
-          </div>
-        </div>
+    <section className="hero shell">
+      <div className="hero-copy"><div className="availability"><span/> BUILDING · LEARNING · OPEN TO THE RIGHT ROLE</div><p className="kicker">NEAL SHARMA / LEXINGTON, KY</p><h1>I turn complicated data into <span>useful systems.</span></h1><p className="lede">Software developer and analyst working across finance, data, AI, and real-world systems. I like the messy problems: figuring out what matters, connecting the pieces, and building something that actually helps.</p><div className="hero-actions"><a className="button primary" href="#work">Explore the work ↓</a><a className="button ghost" href="https://www.linkedin.com/in/neal-sharma23" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+      <aside className="now-card"><div className="terminal-head"><span>NEAL / NOW</span><span>● ONLINE</span></div><div className="now-row"><span>BUILDING</span><strong>Delphi</strong><em>Fintech + financial intelligence</em></div><div className="now-row"><span>RESEARCHING</span><strong>Trading Lab</strong><em>Evidence-first market research</em></div><div className="now-row"><span>SHIPPING</span><strong>GainLog</strong><em>Health data + product thinking</em></div><div className="now-row"><span>DAY JOB</span><strong>Healthcare systems</strong><em>PACS · SQL · integrations · operations</em></div></aside>
+    </section>
 
-        <aside className="signal-card" aria-label="Current focus">
-          <div className="status"><span /> CURRENT FOCUS</div>
-          <h2>Fintech + financial intelligence</h2>
-          <p>
-            Building Delphi while sharpening modern software engineering and financial
-            analysis skills.
-          </p>
-          <div className="metric-grid">
-            <div><strong>01</strong><span>Product engineering</span></div>
-            <div><strong>02</strong><span>Financial analysis</span></div>
-            <div><strong>03</strong><span>Data & integrations</span></div>
-            <div><strong>04</strong><span>AI workflows</span></div>
-          </div>
-        </aside>
-      </section>
+    <section className="manifesto shell"><p>FINANCE · COMMERCE · HEALTH · AI</p><h2>Different domains. Same instinct: understand the system, find the signal, build the useful thing.</h2></section>
 
-      <section className="section shell" id="work">
-        <div className="section-heading">
-          <div>
-            <p className="kicker">SELECTED WORK</p>
-            <h2>Projects with a point of view.</h2>
-          </div>
-          <p>
-            I’m most interested in work where software, data, and real business
-            decisions meet.
-          </p>
-        </div>
+    <section className="section shell" id="work"><div className="section-heading"><div><p className="kicker">SELECTED WORK / 01—05</p><h2>Projects should tell a story.</h2></div><p>Not a wall of logos. These are the projects that best explain how I think — the problem, the decisions, the tradeoffs, and what I learned building them.</p></div><div className="project-stack">{projects.map((project) => <article className={`story-card ${project.featured ? "featured-story" : ""}`} key={project.name}><div className="project-index">{project.number}</div><div className="project-main"><div className="project-meta"><span>{project.type}</span><span className="project-status">● {project.status}</span></div><h3>{project.name}</h3><p>{project.description}</p><div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div><a className="project-link" href={project.href} target="_blank" rel="noreferrer">Explore project ↗</a></div>{project.featured && <div className="cfo-panel"><div className="cat-placeholder">🐈</div><span>CHIEF FINANCIAL OFFICER</span><strong>Delphi</strong><p>Extremely qualified. Occasionally says “right meow.”</p></div>}</article>)}</div></section>
 
-        <div className="project-grid">
-          {projects.map((project, index) => (
-            <article className={`project-card ${index === 0 ? "featured" : ""}`} key={project.name}>
-              <div>
-                <p className="project-eyebrow">{project.eyebrow}</p>
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-              </div>
-              <div className="tags">
-                {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+    <section className="section shell" id="capabilities"><div className="section-heading"><div><p className="kicker">HOW I WORK</p><h2>Technical depth, analytical thinking.</h2></div><p>Fintech engineering and financial analysis are different roles, but they reward many of the same strengths: systems thinking, data fluency, and clear judgment.</p></div><div className="lane-grid">{lanes.map(([num,title,text]) => <article key={title}><span>{num}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
 
-      <section className="section shell" id="capabilities">
-        <div className="section-heading">
-          <div>
-            <p className="kicker">CAPABILITIES</p>
-            <h2>One profile, two strong career lanes.</h2>
-          </div>
-          <p>
-            Fintech engineering and financial analysis are different roles, but they
-            reward many of the same strengths: systems thinking, data fluency, and
-            clear judgment.
-          </p>
-        </div>
-        <div className="discipline-grid">
-          {disciplines.map((item, index) => (
-            <article className="discipline" key={item.title}>
-              <span>0{index + 1}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+    <section className="section shell about" id="about"><div><p className="kicker">ABOUT / THE THROUGH-LINE</p><h2>I started where software has to work.</h2></div><div className="about-copy"><p>My background is healthcare technology: PACS, databases, integrations, infrastructure, and production systems where accuracy and reliability aren’t abstract engineering goals.</p><p>That work pulled me deeper into SQL, development, automation, and systems thinking. Now I’m applying the same mindset to products of my own — from personal finance and trading research to fitness data and AI-native tools.</p><blockquote>“I’m happiest somewhere between ‘why is this happening?’ and ‘I built something that fixes it.’”</blockquote><p className="human-note">Away from the terminal: finance, sports, lifting, and an unreasonable amount of cat involvement in product naming.</p></div></section>
 
-      <section className="section shell about" id="about">
-        <div>
-          <p className="kicker">ABOUT</p>
-          <h2>Production experience before the portfolio.</h2>
-        </div>
-        <div className="about-copy">
-          <p>
-            My background is in healthcare IT, PACS, databases, integrations, and
-            development — supporting real production systems where reliability and
-            accuracy matter.
-          </p>
-          <p>
-            I’m now deliberately expanding that foundation into modern software
-            product engineering and finance. That means building real products,
-            studying financial analysis, and using data to understand how businesses
-            actually perform.
-          </p>
-          <p>
-            I’m especially interested in fintech, financial technology, software
-            engineering, data-heavy product roles, and financial analyst opportunities
-            where technical depth is an advantage.
-          </p>
-        </div>
-      </section>
-
-      <section className="cta shell">
-        <p className="kicker">LET’S CONNECT</p>
-        <h2>Interested in what I’m building?</h2>
-        <p>
-          Explore the code today. Full case studies, analysis projects, and resume are
-          coming next.
-        </p>
-        <a className="button primary" href="https://github.com/KumarG23" target="_blank" rel="noreferrer">
-          View GitHub
-        </a>
-      </section>
-
-      <footer className="footer shell">
-        <span>© 2026 Neal Sharma</span>
-        <span>Built with Next.js</span>
-      </footer>
-    </main>
-  );
+    <section className="cta shell"><p className="kicker">NEAL SHARMA / 2026</p><h2>Let’s build something useful.</h2><p>I’m exploring opportunities where software, finance, data, or AI overlap — especially roles where being comfortable across disciplines is an advantage.</p><div className="hero-actions centered"><a className="button primary" href="https://www.linkedin.com/in/neal-sharma23" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a className="button ghost" href="https://github.com/KumarG23" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
+    <footer className="footer shell"><span>© 2026 Neal Sharma</span><span>neal.sharma-house.com · Built with Next.js</span></footer>
+  </main>;
 }
