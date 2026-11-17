@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Neal Sharma | Software, Data & Finance",
+  title: "Neal Sharma | AI-Enabled Analytics & Business Automation",
   description:
-    "Neal Sharma builds practical software across data, financial systems, and production technology.",
+    "Neal Sharma works across operational analytics, SQL, enterprise integrations, business systems, and practical AI-driven automation.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
