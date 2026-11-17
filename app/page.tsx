@@ -1,78 +1,80 @@
 const projects = [
   {
     number: "01",
-    name: "Delphi",
-    type: "FINTECH · PERSONAL FINANCE",
-    status: "ACTIVE BUILD",
-    summary: "A personal finance app that brings accounts, balances, transactions, debt, and progress into one place.",
+    name: "Operational Analytics",
+    type: "DATA · KPI REPORTING",
+    status: "MVP · VALIDATION PENDING",
+    summary: "An internal analytics project that makes operational performance measurable, consistent, and understandable to stakeholders.",
     receipts: [
-      ["Why", "I wanted a clearer view of my own finances and a product I could keep improving as I learn more about financial systems."],
-      ["Approach", "I started with the core financial data: accounts, balances, transactions, and historical snapshots."],
-      ["Built with", "React Native, Expo, TypeScript, and Supabase/Postgres, with each user's financial data kept separate."],
-      ["Status", "The core account, balance, and transaction features are working. I use the app and continue to build on it."],
+      ["Problem", "Reporting is less useful when different dashboards and exports disagree about the numbers."],
+      ["Approach", "A shared metric layer feeds interactive dashboards and executive-facing Excel/PDF reporting."],
+      ["Quality", "SQL integration, synthetic test inputs, data-validation rules, and automated tests support reproducible reporting."],
+      ["Boundary", "This work is described at a high level. Employer-related source code and data are not public portfolio assets."],
     ],
-    tags: ["TypeScript", "React Native", "Supabase", "PostgreSQL"],
+    tags: ["Python", "SQL", "Streamlit", "Data Quality", "Reporting"],
+    href: null,
+    featured: false,
+  },
+  {
+    number: "02",
+    name: "Delphi",
+    type: "APPLIED AI · FINANCIAL ANALYTICS",
+    status: "PERSONAL BUILD",
+    summary: "A personal finance app exploring how trustworthy calculations and a conversational AI assistant can work together.",
+    receipts: [
+      ["Why", "I wanted to see changes in my finances, understand what drives them, and ask better questions of my own data."],
+      ["Approach", "The application computes balances, cash flow, and trends before passing structured context to an LLM."],
+      ["Built with", "React Native, Expo, TypeScript, and Supabase/PostgreSQL, with row-level data isolation."],
+      ["Status", "Personal, early-stage software under active development—not a commercial product."],
+    ],
+    tags: ["TypeScript", "PostgreSQL", "Data Analytics", "LLM Integration"],
     href: "https://github.com/KumarG23/delphi",
     featured: true,
   },
   {
-    number: "02",
-    name: "Trading Lab",
-    type: "FINANCIAL RESEARCH · PYTHON",
-    status: "RESEARCH MODE",
-    summary: "A paper-trading research environment for testing market ideas and measuring results over time.",
-    receipts: [
-      ["Why", "After four years of trading and studying markets, I wanted a more disciplined way to test ideas and learn from the results."],
-      ["Approach", "Strategies are written down before testing, tracked with consistent metrics, and reviewed across a larger sample."],
-      ["Boundary", "The project stays paper-only, and research results are kept separate from portfolio results."],
-      ["Status", "Research is ongoing. Live trading is not enabled."],
-    ],
-    tags: ["Python", "SQLite", "Backtesting", "Metrics"],
-    href: "https://github.com/KumarG23/trading-lab",
-  },
-  {
     number: "03",
-    name: "Nepali Threads",
-    type: "COMMERCE · FULL STACK",
-    status: "PRE-LAUNCH",
-    summary: "A family-built online store for Nepali goods, with the main storefront and checkout experience in place.",
+    name: "Jarvis Command",
+    type: "AI WORKFLOWS · BUSINESS SYSTEMS",
+    status: "ITERATING",
+    summary: "A secured personal interface for inspecting AI-agent activity and exploring safe, auditable workflow automation.",
     receipts: [
-      ["Why", "My family needed a real storefront for products they plan to sell, not just a portfolio demo."],
-      ["Approach", "I built the shopping, account, payment, order, and inventory workflows around how the business will operate."],
-      ["Progress", "It began as a React/Django capstone and later became a rebuilt Next.js product."],
-      ["Status", "The software is built and being prepared for the business launch."],
+      ["Why", "AI agents are more useful when their capabilities and operational state are visible and permissioned."],
+      ["Approach", "A narrow read-only interface sits behind authentication and limited API access."],
+      ["Learning", "I experiment with tool boundaries, access controls, orchestration, testing, and supervised automation."],
+      ["Status", "A personal project with read-only capabilities; broader control workflows remain future work."],
     ],
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    href: "https://github.com/KumarG23/nepali-threads",
+    tags: ["TypeScript", "React", "APIs", "AI Agents", "Access Control"],
+    href: "https://github.com/KumarG23/jarvis-command",
+    featured: false,
   },
 ];
 
 const alsoShipping = [
   {
     name: "GainLog",
-    type: "HEALTH · MOBILE",
+    type: "DATA · MOBILE APP",
     status: "ACTIVE BUILD",
-    summary: "A fitness and nutrition app for workouts, goals, trends, reminders, and Android Health Connect data.",
+    summary: "A fitness and nutrition app that brings history, trends, goals, reminders, and Android Health Connect data together.",
     href: "https://github.com/KumarG23/GainLog",
   },
   {
-    name: "Jarvis Command",
-    type: "AI · SYSTEMS",
-    status: "ITERATING",
-    summary: "A chat-first workspace for managing projects, tools, approvals, and AI-assisted workflows.",
-    href: "https://github.com/KumarG23/jarvis-command",
+    name: "Nepali Threads",
+    type: "BUSINESS SYSTEMS · ECOMMERCE",
+    status: "PRE-LAUNCH",
+    summary: "A family storefront with customer, payment, order, inventory, and fulfillment workflows.",
+    href: "https://github.com/KumarG23/nepali-threads",
   },
 ];
 
 const proofs = [
-  ["Production systems", "I support and troubleshoot software that people rely on for daily work."],
-  ["SQL and data", "I work with operational data, reporting, databases, and the details behind the numbers."],
-  ["Integrations", "I connect systems and work through the vendor, API, and workflow issues between them."],
-  ["Financial products", "I build with accounts, balances, transactions, market data, and financial reporting concepts."],
-  ["Security mindset", "I consider access, privacy, and least privilege from the beginning."],
-  ["Product judgment", "I decide what to build, what to leave out, and how to tell whether it is working."],
-  ["AI-assisted development", "I use AI tools heavily while remaining responsible for architecture, testing, and final decisions."],
-  ["Market experience", "I spent four years trading, analyzing markets, journaling decisions, and managing risk."],
+  ["Operational analytics", "I work with performance metrics, trends, dashboards, and reporting people can act on."],
+  ["SQL and data quality", "I query data, define metrics carefully, and check what the numbers actually represent."],
+  ["Applied AI", "I use Claude, Codex, and agent tools to build and explore useful solutions with validation and oversight."],
+  ["Business processes", "I like turning a messy workflow into clearer requirements and a repeatable process."],
+  ["Integrations", "I work across APIs, enterprise applications, databases, and the gaps between systems."],
+  ["Security and privacy", "I consider identity, access boundaries, sensitive information, and failure modes."],
+  ["Real-world systems", "My current work involves production software with operational consequences and real users."],
+  ["Product judgment", "I make practical decisions about what to build, how to test it, and when it is actually ready."],
 ];
 
 export default function Home() {
@@ -102,10 +104,10 @@ export default function Home() {
           </div>
           <p className="kicker">NEAL SHARMA / LEXINGTON, KY</p>
           <h1>
-            I build practical software for problems where <span>the details matter.</span>
+            I turn complex data and workflows into <span>tools people can use.</span>
           </h1>
           <p className="lede">
-            My background is in healthcare technology, where I work with SQL, integrations, and systems people rely on every day. I'm bringing that experience into fintech and financial software through products I build and use myself.
+            I'm a PACS Analyst & Developer working with SQL, operational analytics, enterprise systems, and integrations. I build with AI tools, too—looking for ways to make data clearer, workflows simpler, and business software more useful.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#work">
@@ -128,23 +130,23 @@ export default function Home() {
           </div>
           <div className="now-row">
             <span>BUILDING</span>
-            <strong>Delphi</strong>
-            <em>Personal finance app</em>
+            <strong>AI + data tools</strong>
+            <em>Delphi · Jarvis Command</em>
           </div>
           <div className="now-row">
-            <span>RESEARCHING</span>
-            <strong>Trading Lab</strong>
-            <em>Paper-trading research</em>
+            <span>ANALYZING</span>
+            <strong>Operational metrics</strong>
+            <em>SQL · dashboards · reporting</em>
           </div>
           <div className="now-row">
             <span>DAY JOB</span>
-            <strong>Healthcare systems</strong>
+            <strong>Enterprise systems</strong>
             <em>PACS · SQL · integrations</em>
           </div>
           <div className="now-row">
-            <span>ALSO</span>
-            <strong>GainLog + Jarvis</strong>
-            <em>Fitness data + AI workflows</em>
+            <span>EXPLORING</span>
+            <strong>AI business automation</strong>
+            <em>Agents · workflows · BI</em>
           </div>
         </aside>
       </section>
@@ -188,9 +190,11 @@ export default function Home() {
                     <span key={tag}>{tag}</span>
                   ))}
                 </div>
-                <a className="project-link" href={project.href} target="_blank" rel="noreferrer">
-                  GitHub ↗
-                </a>
+                {project.href && (
+                  <a className="project-link" href={project.href} target="_blank" rel="noreferrer">
+                    GitHub ↗
+                  </a>
+                )}
               </div>
               {project.featured && (
                 <div className="cfo-panel">
@@ -231,7 +235,7 @@ export default function Home() {
             <h2>What I bring to the work.</h2>
           </div>
           <p>
-            I'm most interested in software and product roles in fintech, especially where data, integrations, and financial knowledge overlap.
+            I'm most interested in AI-enabled analytics, business systems, and automation roles where data, integrations, and practical AI make work better.
           </p>
         </div>
         <div className="lane-grid proof-grid">
@@ -255,23 +259,23 @@ export default function Home() {
             <img src="/images/neal.jpg" alt="Neal Sharma" />
           </div>
           <p>
-            My career started in healthcare technology, supporting PACS, databases, integrations, and infrastructure. It taught me how much good software depends on understanding the people, data, and workflows around it.
+            My work in healthcare technology spans PACS, SQL, operational reporting, integrations, and enterprise systems. It taught me that the best technical solutions start with understanding the data and the people who use it.
           </p>
           <p>
-            I later completed a 500-hour full-time software development program and kept building from there. I also spent four years trading and studying financial markets, which is a big part of why fintech feels like a natural next step.
+            I completed a 500-hour full-time software development program and continued experimenting with applications, local AI models, and agent tools. I particularly enjoy building with Claude and Codex while checking the logic, results, and limitations myself.
           </p>
           <p>
-            Today I'm combining those areas through projects such as Delphi and Trading Lab. I'm looking for a role where I can keep building useful software, learn from a strong team, and contribute the experience I already have with production systems and financial analysis.
+            Today I'm combining enterprise systems experience with analytics and applied AI through projects such as Delphi and Jarvis Command. I'm interested in teams using data, automation, and AI to improve business processes—not only fintech or traditional software engineering.
           </p>
-          <p className="human-note">Lexington, KY. Family, lifting, finance, and an unreasonable amount of cat involvement in product naming.</p>
+          <p className="human-note">Lexington, KY. Family, lifting, too many projects, and an unreasonable amount of cat involvement in product naming.</p>
         </div>
       </section>
 
       <section className="cta shell">
         <p className="kicker">NEAL SHARMA / 2026</p>
-        <h2>I'm looking for the right next role in fintech or financial software.</h2>
+        <h2>I'm exploring roles in AI-enabled analytics and business automation.</h2>
         <p>
-          I'm especially interested in software, product, and data-focused roles where practical experience across systems and finance is useful.
+          I'm especially interested in AI business systems, data/BI analytics, intelligent automation, and teams building useful internal tools with thoughtful, sustainable work practices.
         </p>
         <div className="hero-actions centered">
           <a
